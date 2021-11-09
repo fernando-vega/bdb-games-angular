@@ -17,7 +17,7 @@ export class PlatformsComponent implements OnInit {
     this.getPlatforms();
   }
 
-  private getPlatforms() {
+  public getPlatforms() {
     this.platformsServices.getAllPlatforms()
     .then(async value => {
       this.platforms = value.results;
